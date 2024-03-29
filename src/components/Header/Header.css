@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0b1416;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    margin-top: .6rem;
+}
+
+.header .hamburger-menu,
+.header .logo {
+    width: 35px;
+    height: 35px;
+}
+
+.hamburger-menu {
+    margin-left: 6px;
+}
+.header .search-icon {
+    background-color: #223237;
+    width: 25px;
+    height: 25px;
+}
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 17px;
+    padding-left: 4px;
+    padding-right: 4px;
+    background-color: #223237;
+}
+
+.search-container .search-input {
+    background-color: #223237;
+    color: #fff;
+    border: none;
+    height: 25px;
+}
+
+.search-container .search-input:focus {
+    border: none;
+    outline: none;
+}
+
+/* Logo */
+.logo {
+    margin-right: 6px;
+}
