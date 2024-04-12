@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    display: block;
+}
+
+.post-item {
+    color: #fff;
+    background-color: #995528;
+    width: 93%;
+    height: 350px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 6px;
+}
+
+.post-heading {
+    margin-bottom: .7rem;
+}
+
+.post-img {
+    display: block;
+    background-color: aqua;
+    width: 90%;
+    height: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    color: black;
+    border-radius: 6px;
+}
+
+.post-src {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: .7rem;
+}

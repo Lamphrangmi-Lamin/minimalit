@@ -1,0 +1,17 @@
+.subreddit-item {
+    display: flex;
+    align-items: center;
+    column-gap: .7rem;
+    margin-left: 1rem;
+}
+
+.subreddit-icon {
+    background-color: #f0f0f6;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+
+.subreddit-name {
+    font-size: .875rem;
+}
