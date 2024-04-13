@@ -7,8 +7,8 @@ function App() {
   return (
     <div className="App">
       <Header />
-      {/* <SubredditList /> */}s
-      <PostList />
+      {/* <SubredditList /> */}
+      <PostList subreddit={"memes"} />
     </div>
   );
 }
