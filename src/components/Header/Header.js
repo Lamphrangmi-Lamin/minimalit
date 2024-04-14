@@ -8,7 +8,7 @@ function Header() {
     return (
         <div className="header searbar">
             <img className="hamburger-menu" src={hamburger} alt="hamburger menu" />
-            <label className="search-container" for="search">
+            <label className="search-container" htmlFor="search">
                 <img alt="search icon" className="search-icon" src={searchIcon} />
                 <input id="search" className="search-input" name="search" type="text" placeholder="search"/>
             </label>

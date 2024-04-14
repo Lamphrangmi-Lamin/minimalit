@@ -1,13 +1,13 @@
 import React from "react";
 import Header from "../Header/Header";
-// import SubredditList from "../SubredditList/SubredditList";
+import SubredditList from "../SubredditList/SubredditList";
 import PostList from "../PostList/PostList";
 
 function App() {
   return (
     <div className="App">
       <Header />
-      {/* <SubredditList /> */}
+      <SubredditList />
       <PostList subreddit={"memes"} />
     </div>
   );
