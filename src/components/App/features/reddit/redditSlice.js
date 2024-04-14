@@ -12,8 +12,10 @@ export const fetchPosts = createAsyncThunk(
     async (subreddit) => {
         try {
             const response = await axios.request(`https://www.reddit.com/r/${subreddit}.json`);
-            // console.log(response.data.data.children);
-            return response.data.data.children.map((child) => (child.data)); // Return only the posts array
+            // console.log(response.data.data.children[0].permalink);
+            const posts = response.data.data.children.map((child) => (child.data)); // Return only the posts array
+            const nonVideoPosts = posts.filter((post) => !post.is_video);
+            return nonVideoPosts;
         } catch (error) {
             throw new Error('Failed to fetch posts');
         }
@@ -33,7 +35,7 @@ const redditSlice = createSlice({
             .addCase(fetchPosts.fulfilled, (state, action) => {
                 state.loading = false;
                 state.posts = action.payload;
-                // console.log(state.posts)
+                console.log(state.posts)
             })
             .addCase(fetchPosts.rejected, (state, action) => {
                 state.loading = false;

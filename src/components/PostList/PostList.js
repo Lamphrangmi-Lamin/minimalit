@@ -28,6 +28,7 @@ function PostList({subreddit}) {
                 url={post.url}
                 author={post.author}
                 alt={post.post_hint}
+                is_video={post.is_video}
                 />
             ))}
         </div>
