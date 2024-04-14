@@ -25,9 +25,8 @@ function PostList({subreddit}) {
                 <PostItem
                 key={post.id} 
                 title={post.title}
-                thumbnail={post.thumbnail}
+                url={post.url}
                 author={post.author}
-                source={post.domain}
                 alt={post.post_hint}
                 />
             ))}

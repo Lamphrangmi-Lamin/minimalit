@@ -12,7 +12,7 @@ function SubredditList() {
     return (
         <div className="subreddit-list">
             <h2 className="heading">COMMUNITIES</h2>
-            <SubredditItem name="Nature" src={subredditIcons.nature} 
+            <SubredditItem name="Popular" src={subredditIcons.nature} 
             className="subreddit-item" />
             <SubredditItem name="Memes" src={subredditIcons.memes} className="subreddit-item" />
         </div>
